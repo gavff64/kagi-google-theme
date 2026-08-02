@@ -1,5 +1,6 @@
 # kagi-google-theme
 Hate to say it but the current default kagi design is an eyesore. This is super clean and the day a kagi update breaks it will be sad :(
+
 Had to remove search suggestions on the image tab, as well as remove the reverse image search button, those kept breaking things.
 
 <img width="1828" height="1025" alt="screen1" src="https://github.com/user-attachments/assets/366b9566-3641-43e1-9f5a-5cab3a513851" />
