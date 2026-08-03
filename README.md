@@ -1,5 +1,5 @@
 # kagi-google-theme
-Hate to say it but I find the current default Kagi design to be pretty ugly, cluttered. This is a significantly improved desktop experience and an "OK" one on mobile, could be better. Don't love that I'm basically maxing out the Kagi 40,000 character CSS limit for this, but I'll take what I can get.
+Hate to say it but I **PERSONALLY** find the current default Kagi design to be pretty ugly, cluttered. This is a significantly improved desktop experience and an "OK" one on mobile, could be better. Don't love that I'm basically maxing out the Kagi 40,000 character CSS limit for this, but I'll take what I can get.
 
 *Had to remove search suggestions on the image tab, as well as remove the reverse image search button, those kept breaking things.*
 
@@ -13,11 +13,15 @@ Hate to say it but I find the current default Kagi design to be pretty ugly, clu
 
 <img width="1808" height="1036" alt="screen4" src="https://github.com/user-attachments/assets/56109450-e32a-4936-82c1-101336a0e27a" />
 
-# New! Aug 3rd, 2026 | Mobile improvements
-Mobile was completely broken on the old version. This doesn't look as good as Google on mobile, but at least it works.
+# And mobile specific improvements!
+All in one theme, looks different than desktop.
 
-<img width="295" height="600" alt="jpeg_1" src="https://github.com/user-attachments/assets/5be3bde0-bb97-4a26-847a-cc0b486ad79a" />
+<img width="262" height="536" alt="1" src="https://github.com/user-attachments/assets/6e9450e7-4718-43c7-869a-fdb4a1b3cc3d" />
 
-<img width="295" height="600" alt="jpeg_2" src="https://github.com/user-attachments/assets/45102fe8-e101-4ebf-8146-215447437909" />
+<img width="262" height="536" alt="2" src="https://github.com/user-attachments/assets/e55fa57a-3103-4d5e-b99c-6e24a920a1a4" />
 
-<img width="295" height="600" alt="jpeg_3" src="https://github.com/user-attachments/assets/2a6fcd82-45ee-45ef-8a29-321107012326" />
+<img width="262" height="536" alt="3" src="https://github.com/user-attachments/assets/c5e5eaed-0a82-488c-9ffc-f0f95c8d5dd4" />
+
+<img width="262" height="536" alt="4" src="https://github.com/user-attachments/assets/addf024b-0153-47e5-a449-b316f71fb7d8" />
+
+<img width="262" height="536" alt="5" src="https://github.com/user-attachments/assets/a0c68e81-ee7e-45cc-ad9d-15f8b8e761d0" />
