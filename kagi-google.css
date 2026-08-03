@@ -1,4 +1,5 @@
-/* Kagi - Modern Google theme + mobile fixes (v3). Paste ENTIRE file at kagi.com/settings/custom_css, Apply. */ :root{--g-link: #1a0dab; --g-link-visited: #681da8; --g-text: #202124; --g-snippet: #4d5156; --g-url: #4d5156; --g-url-path: #70757a; --g-muted: #5f6368; --g-secondary: #70757a; --g-border: #dfe1e5; --g-border-strong: #dadce0; --g-bg: #ffffff; --g-bg-hover: #f1f3f4; --g-pill-bg: #ffffff; --g-pill-border: #dadce0; --g-card-bg: #ffffff; --g-chip-bg: #ffffff; --g-chip-active-bg: #e8f0fe; --g-chip-active-border: #c5d8fb; --g-tab-active: #1a73e8; --g-tab-inactive: #5f6368; --g-footer-bg: #f2f2f2; --g-fav-bg: #dadce0; --g-placeholder: #9aa0a6; --g-url-pill-bg: rgba(221, 222, 225, 0.6); --g-url-pill-color: #3c4043; --g-font: Arial, "Helvetica Neue", Helvetica, sans-serif; --g-pill-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); --g-pill-shadow-focus: 0 2px 8px 1px rgba(64, 60, 67, 0.24); --app-text: var(--g-text) !important; --app-bg: var(--g-bg) !important; --app-search-text: var(--g-text) !important; --color-search-input: var(--g-pill-bg) !important; --color-search-input-border: var(--g-pill-border) !important; --center_content_width: 652px !important; --center_content_min_width: 652px !important; --center_content_padding: 16px !important; --search-result-title: var(--g-link) !important; --search-result-title-hover: var(--g-link) !important; --search-result-content-text: var(--g-snippet) !important; --search-result-url-link: var(--g-url) !important; --result-item-title-border: transparent !important; --result-item-title-border_hover: transparent !important; --color_link: var(--g-link) !important; --color_link_hover: var(--g-link) !important; --color-primary_visited: var(--g-link-visited) !important; --primary-visited: var(--g-link-visited) !important; --wiki-content-links: var(--g-link) !important; --input-bg: var(--g-pill-bg) !important; --background-color: var(--g-bg) !important; --m_sri_gap_color: transparent !important; --footer-bg: var(--g-footer-bg) !important; --related-item-bg: var(--g-card-bg) !important; --search-result-date-bg: transparent !important; --search-result-date-new-bg: transparent !important; --filter-dd-bg: var(--g-card-bg) !important; --dd-list-input-bg: var(--g-card-bg) !important; --dd-hover-bg: var(--g-bg-hover) !important; --primary-hover: #1967d2 !important; --primary-visited: var(--g-link-visited) !important}
+/* Kagi "Modern Google" theme, with mobile fixes added.
+   Paste the whole file at kagi.com/settings/custom_css and hit Apply. */ :root{--g-link: #1a0dab; --g-link-visited: #681da8; --g-text: #202124; --g-snippet: #4d5156; --g-url: #4d5156; --g-url-path: #70757a; --g-muted: #5f6368; --g-secondary: #70757a; --g-border: #dfe1e5; --g-border-strong: #dadce0; --g-bg: #ffffff; --g-bg-hover: #f1f3f4; --g-pill-bg: #ffffff; --g-pill-border: #dadce0; --g-card-bg: #ffffff; --g-chip-bg: #ffffff; --g-chip-active-bg: #e8f0fe; --g-chip-active-border: #c5d8fb; --g-tab-active: #1a73e8; --g-tab-inactive: #5f6368; --g-footer-bg: #f2f2f2; --g-fav-bg: #dadce0; --g-placeholder: #9aa0a6; --g-url-pill-bg: rgba(221, 222, 225, 0.6); --g-url-pill-color: #3c4043; --g-font: Arial, "Helvetica Neue", Helvetica, sans-serif; --g-pill-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); --g-pill-shadow-focus: 0 2px 8px 1px rgba(64, 60, 67, 0.24); --app-text: var(--g-text) !important; --app-bg: var(--g-bg) !important; --app-search-text: var(--g-text) !important; --color-search-input: var(--g-pill-bg) !important; --color-search-input-border: var(--g-pill-border) !important; --center_content_width: 652px !important; --center_content_min_width: 652px !important; --center_content_padding: 16px !important; --search-result-title: var(--g-link) !important; --search-result-title-hover: var(--g-link) !important; --search-result-content-text: var(--g-snippet) !important; --search-result-url-link: var(--g-url) !important; --result-item-title-border: transparent !important; --result-item-title-border_hover: transparent !important; --color_link: var(--g-link) !important; --color_link_hover: var(--g-link) !important; --color-primary_visited: var(--g-link-visited) !important; --primary-visited: var(--g-link-visited) !important; --wiki-content-links: var(--g-link) !important; --input-bg: var(--g-pill-bg) !important; --background-color: var(--g-bg) !important; --m_sri_gap_color: transparent !important; --footer-bg: var(--g-footer-bg) !important; --related-item-bg: var(--g-card-bg) !important; --search-result-date-bg: transparent !important; --search-result-date-new-bg: transparent !important; --filter-dd-bg: var(--g-card-bg) !important; --dd-list-input-bg: var(--g-card-bg) !important; --dd-hover-bg: var(--g-bg-hover) !important; --primary-hover: #1967d2 !important; --primary-visited: var(--g-link-visited) !important}
 html, body{background-color: var(--g-bg) !important}
 body, #_0_app_content, .app-content-box, main{font-family: var(--g-font) !important; color: var(--g-text) !important; letter-spacing: normal !important}
 button, .btn{font-family: var(--g-font) !important}
@@ -153,34 +154,6 @@ footer{background-color: var(--g-footer-bg) !important; border-top: 1px solid va
 .top_podcasts_box{margin-bottom: 24px !important}
 .podcast_result a{color: var(--g-link) !important; text-decoration: none !important}
 .podcast_result a:hover{text-decoration: underline !important}
-.image-preview-wrapper{background: rgba(8, 8, 10, 0.88) !important; backdrop-filter: blur(14px) !important}
-.image-preview-close-button{color: rgba(255, 255, 255, 0.8) !important; background: rgba(255, 255, 255, 0.08) !important; border: 1px solid rgba(255, 255, 255, 0.12) !important; border-radius: 50% !important; top: 24px !important; right: 24px !important; height: 40px !important; width: 40px !important; transition: background 0.15s ease, color 0.15s ease !important}
-.image-preview-close-button:hover{background: rgba(255, 255, 255, 0.18) !important; color: #fff !important}
-#PreviewImageElement{border-radius: 10px !important; box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6) !important}
-.__img-first img,.__img-last img{opacity: 0.3 !important; border-radius: 8px !important; transition: opacity 0.15s ease !important}
-.__img-first img:hover,.__img-last img:hover{opacity: 0.65 !important}
-.image_preview_arrows_box button{background: rgba(255, 255, 255, 0.08) !important; border: 1px solid rgba(255, 255, 255, 0.14) !important; color: #fff !important; border-radius: 50% !important; height: 44px !important; width: 44px !important; backdrop-filter: blur(6px) !important; transition: background 0.15s ease !important}
-.image_preview_arrows_box button:hover{background: rgba(255, 255, 255, 0.18) !important}
-.image-preview-footer{background: transparent !important; border-top: 1px solid rgba(255, 255, 255, 0.08) !important; border-radius: 0 !important; padding: 16px 28px !important; gap: 12px !important; align-items: center !important}
-.image-preview-footer > div{padding: 0 !important}
-.image-preview-info-header{grid-template-columns: 36px minmax(0, 1fr) !important; column-gap: 12px !important; max-width: none !important; min-width: 0 !important}
-.image-preview-info-header .favicon-wrap img,.image-preview-info-header img#domain_favicon{border-radius: 50% !important; width: 32px !important; height: 32px !important}
-#PreviewImageTitle{color: #fff !important; font-size: 16px !important; font-weight: 500 !important; line-height: 1.3 !important}
-.image-preview-links{color: rgba(255, 255, 255, 0.55) !important; font-size: 13px !important; gap: 14px !important; flex-wrap: wrap !important}
-.image-preview-links a{color: #8ab4f8 !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 4px !important}
-.image-preview-links a:hover{text-decoration: underline !important}
-.image-preview-info-footer-buttons{gap: 8px !important}
-.image-preview-info-footer-buttons .btn{border-radius: 999px !important; font-size: 13px !important; font-weight: 500 !important; padding: 8px 18px !important; gap: 6px !important; background: rgba(255, 255, 255, 0.06) !important; border: 1px solid rgba(255, 255, 255, 0.16) !important; color: #fff !important}
-.image-preview-info-footer-buttons .btn:hover{background: rgba(255, 255, 255, 0.14) !important}
-.image-preview-info-footer-buttons #PreviewImageViewImageBtn{background: #fff !important; border-color: transparent !important; color: #111 !important}
-.image-preview-info-footer-buttons #PreviewImageViewImageBtn:hover{background: rgba(255, 255, 255, 0.88) !important}
-.image-preview-info-footer-buttons #PreviewImageViewPageBtn{display: none !important}
-.image-preview-info-body{background: transparent !important; border-radius: 0 !important; max-width: none !important; justify-self: auto !important; gap: 8px !important}
-.image-preview-info-body .image-preview-info-item{font-size: 12px !important; gap: 4px !important}
-.image-preview-info-body .ranked-icon{background: rgba(255, 255, 255, 0.08) !important; border-radius: 50% !important; height: 38px !important; width: 38px !important; padding: 8px !important; color: #fff !important}
-.image-preview-info-body .pane-size,.image-preview-info-body .pane-type,.image-preview-info-body .pane-uploaded,.image-preview-info-body .pane-aspect{display: none !important}
-.image-preview-info-body .image-preview-info-item__title{color: rgba(255, 255, 255, 0.45) !important; font-size: 10px !important; text-transform: uppercase !important; letter-spacing: 0.8px !important}
-.image-preview-info-body .image-preview-info-item__data{color: #fff !important; font-size: 13px !important}
 .img_search_state_checkbox_label,._0_iu_form_toggle,.iu_box{display: none !important}
 @media screen and (max-width: 1000px){:root{--center_content_width: 100% !important; --center_content_min_width: 0px !important; --center_content_padding: 12px !important}
 nav#tonav.app-nav, ._0_content-bay, .app-content-box.top-panel-box{margin-left: 0 !important}
@@ -192,27 +165,59 @@ nav#tonav.app-nav, ._0_content-bay, .app-content-box.top-panel-box{margin-left: 
 .center-content-box .search-input-container._0_search-input-container{border-radius: 22px !important; height: 44px !important; min-height: 44px !important}
 .search-form{height: 44px !important}}
 
-/* ===== MOBILE FIXES ===== */
-/* Hide the Assistant link in the mobile top bar */
+/* Remove the Assistant link from the top bar on mobile */
 body.mob #accountContainer .header_links,body.mob .top_nav_links{visibility:hidden !important}
-/* Homepage: form sized to the pill so the suggestion dropdown stays flush */
+/* Size the homepage search form to the pill so the suggestions stay flush with it */
 html[data-path="/landing"] body.mob .search-form{width:min(652px,calc(100vw - 30px)) !important;margin:0 auto !important;padding-left:0 !important;padding-right:0 !important;height:71px !important}
 html[data-path="/landing"] body.mob .search-form .auto_suggestions{top:100% !important;left:0 !important;right:0 !important;max-width:none !important}
-/* SERP: cap the search pill so it stays aligned with the dropdown */
+/* Cap the results-page search pill and give it the same background as the homepage one */
 body.mob .m-h .search-form{max-width:652px !important;margin:0 auto !important}
-/* Search page: hide logo + counter while the search bar is active */
+body.mob .m-h .search-input-container{background:var(--g-pill-bg) !important;border:1px solid var(--g-pill-border) !important}
+/* When the results-page search bar is active, sit at the same spot as the homepage one */
+body.mob .m-h .s-f-w.--active .search-form{height:71px !important;min-height:0 !important;padding-top:15px !important}
+body.mob .m-h .s-f-w.--active .search-input-container{height:56px !important;min-height:56px !important}
+/* While the search bar is active, hide the logo and search counter behind it */
 body.mob .m-h .s-f-w.--active .m-app-logo,body.mob .m-h .s-f-w.--active ._0_search_counter_box{visibility:hidden !important}
 
-/* ===== GLOBAL FIXES ===== */
-/* Stuck suggestions: hide when blurred or empty */
+/* Stuck suggestions: hide the dropdown when the box is blurred or emptied */
 .search-form:not(:focus-within) .auto_suggestions:not(:hover),.search-form:not(:focus-within) .autosugg-landing:not(:hover),.search-form:has(#searchBar:placeholder-shown) .auto_suggestions,.search-form:has(#searchBar:placeholder-shown) .autosugg-landing{display:none !important}
-/* Empty boxes must never cover results */
+/* An empty or stale suggestion box must never cover the results */
 .search-form .auto_suggestions:not(:has(.auto_suggestions_in > *)),.search-form .autosugg-landing:not(:has(.auto_suggestions_in > *)){display:none !important}
-/* Restore pill shape when suggestions close */
+/* When suggestions close, round the search pill corners again */
 html[data-path="/landing"] body:not(.mob) .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/landing"] body:not(.mob) .search-form:not(:focus-within) .search-input-container{border-radius:36px !important;border-bottom:1px solid transparent !important}
 html[data-path="/search"] body:not(.mob) .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/search"] body:not(.mob) .search-form:not(:focus-within) .search-input-container{border-radius:24px !important;border-bottom:1px solid var(--g-pill-border) !important}
 html[data-path="/landing"] body.mob .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/landing"] body.mob .search-form:not(:focus-within) .search-input-container{border-radius:30px !important;border-bottom:1px solid transparent !important}
 html[data-path="/search"] body.mob .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/search"] body.mob .search-form:not(:focus-within) .search-input-container{border-radius:30px !important;border-bottom:1px solid transparent !important}
+/* Video, news and podcast results get the same cards, with tighter gaps */
+body.mob .videoResultItem,body.mob .newsResultItem,body.mob .podcast_result{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:0 !important}
+body.mob .videos._0_provider-content,body.mob .podcast_results{row-gap:16px !important;column-gap:16px !important}
+body.mob .newsResultItem{margin:0 0 16px !important}
+/* Remove the floating search button that pops up while scrolling */
+body.mob .quick-search-btn{display:none !important}
+/* Show suggestions on the mobile image search (desktop keeps them hidden) */
+html[data-path="/images"] body.mob .search-form .auto_suggestions:has(.auto_suggestions_in > *){display:block !important}
+/* Image results: two-up collage, like Google on mobile */
+html[data-path="/images"] body.mob .column._0_img-results,html[data-path="/images"] body.mob [class*="img-results"].column{display:grid !important;grid-template-columns:repeat(2,1fr) !important;gap:4px !important}
+html[data-path="/images"] body.mob ._0_img-results .item,html[data-path="/images"] body.mob [class*="img-results"] .item{width:100% !important;max-width:100% !important;margin:0 !important;padding:0 !important;overflow:hidden !important}
+html[data-path="/images"] body.mob ._0_img-results .item img{width:100% !important;height:100% !important;aspect-ratio:1 !important;object-fit:cover !important;display:block !important}
+/* Quick Answer: a card that starts collapsed to a snippet; "Show More" expands it */
+body.mob .qa-container-box._0_quick_answer_box{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:16px 0 16px !important}
+body.mob .qa-container-box:has(._0_qa_more_info_box[hidden]) .qa-content{max-height:150px !important;overflow:hidden !important;position:relative !important}
+body.mob .qa-container-box:has(._0_qa_more_info_box[hidden]) .qa-content::after{content:"" !important;position:absolute !important;left:0 !important;right:0 !important;bottom:0 !important;height:44px !important;background:linear-gradient(rgba(0,0,0,0),var(--g-card-bg)) !important;pointer-events:none !important}
+body.mob .qa-show-more-btn{background:var(--g-bg-hover) !important;border:none !important;border-radius:999px !important;padding:8px 22px !important;color:var(--g-text) !important;font-size:14px !important}
+body.mob .qa-show-more-btn::before{display:none !important}
+body.mob .qa-show-more-btn-box::after{display:none !important}
+/* Each search result - and its sitelinks - is its own rounded card */
+body.mob .sri-group{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:0 0 16px !important}
+body.mob .sri-group .search-result{background:transparent !important;border:none !important;border-radius:0 !important;padding:0 !important;margin:0 !important}
+body.mob ._0_provider-content > .search-result{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:0 0 16px !important}
+body.mob .sri-group .sr-group{margin:10px -16px -14px !important;padding:0 16px 14px !important}
+
+/* Results-page tabs: no divider line, and less space before the first result */
+body.mob .serp-nav{border-bottom:none !important;margin-bottom:0 !important}
+body.mob main.a-w.content-area{margin-top:0 !important}
+body.mob .main-content._0_main-search-results{padding-top:16px !important}
+body.mob ._0_filters-panel{display:none !important}
 @media (max-width: 767.98px){
 html,body{overflow-x:hidden !important}
 .center-content-box{padding-left:12px !important;padding-right:12px !important}
