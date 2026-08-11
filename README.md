@@ -1,7 +1,7 @@
 # kagi-google-theme
 Hate to say it but I **PERSONALLY** find the current default Kagi design to be pretty ugly, cluttered. This is a significantly improved desktop experience and an "OK" one on mobile, could be better. Don't love that I'm basically maxing out the Kagi 40,000 character CSS limit for this, but I'll take what I can get.
 
-> Note: Some features may be missing like the reverse image search tab due to difficulties getting them to render properly. Also, for transparency sake, this was created with the help of open weight models. It's just a minified CSS file though of course.
+> Note: Some features may be missing like the reverse image search tab due to difficulties getting them to render properly. Also, for transparency sake, this was created with the help of open weight models. It's just a minified CSS file though of course. Also, I just manually removed the extra comments and empty newlines without testing. So... 🤞 lol
 
 <img width="1828" height="1025" alt="screen1" src="https://github.com/user-attachments/assets/366b9566-3641-43e1-9f5a-5cab3a513851" />
 
