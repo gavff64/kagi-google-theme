@@ -164,56 +164,38 @@ nav#tonav.app-nav, ._0_content-bay, .app-content-box.top-panel-box{margin-left: 
 .search-result .__sri-url .__domain-favicon, .__sri-url .__domain-favicon{width: 22px !important; height: 22px !important; min-width: 22px !important}
 .center-content-box .search-input-container._0_search-input-container{border-radius: 22px !important; height: 44px !important; min-height: 44px !important}
 .search-form{height: 44px !important}}
-
-/* Remove the Assistant link from the top bar on mobile */
 body.mob #accountContainer .header_links,body.mob .top_nav_links{visibility:hidden !important}
-/* Size the homepage search form to the pill so the suggestions stay flush with it */
 html[data-path="/landing"] body.mob .search-form{width:min(652px,calc(100vw - 30px)) !important;margin:0 auto !important;padding-left:0 !important;padding-right:0 !important;height:71px !important}
 html[data-path="/landing"] body.mob .search-form .auto_suggestions{top:100% !important;left:0 !important;right:0 !important;max-width:none !important}
-/* Cap the results-page search pill and give it the same background as the homepage one */
 body.mob .m-h .search-form{max-width:652px !important;margin:0 auto !important}
 body.mob .m-h .search-input-container{background:var(--g-pill-bg) !important;border:1px solid var(--g-pill-border) !important}
-/* When the results-page search bar is active, sit at the same spot as the homepage one */
 body.mob .m-h .s-f-w.--active .search-form{height:71px !important;min-height:0 !important;padding-top:15px !important}
 body.mob .m-h .s-f-w.--active .search-input-container{height:56px !important;min-height:56px !important}
-/* While the search bar is active, hide the logo and search counter behind it */
 body.mob .m-h .s-f-w.--active .m-app-logo,body.mob .m-h .s-f-w.--active ._0_search_counter_box{visibility:hidden !important}
-
-/* Stuck suggestions: hide the dropdown when the box is blurred or emptied */
 .search-form:not(:focus-within) .auto_suggestions:not(:hover),.search-form:not(:focus-within) .autosugg-landing:not(:hover),.search-form:has(#searchBar:placeholder-shown) .auto_suggestions,.search-form:has(#searchBar:placeholder-shown) .autosugg-landing{display:none !important}
-/* An empty or stale suggestion box must never cover the results */
 .search-form .auto_suggestions:not(:has(.auto_suggestions_in > *)),.search-form .autosugg-landing:not(:has(.auto_suggestions_in > *)){display:none !important}
-/* When suggestions close, round the search pill corners again */
 html[data-path="/landing"] body:not(.mob) .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/landing"] body:not(.mob) .search-form:not(:focus-within) .search-input-container{border-radius:36px !important;border-bottom:1px solid transparent !important}
 html[data-path="/search"] body:not(.mob) .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/search"] body:not(.mob) .search-form:not(:focus-within) .search-input-container{border-radius:24px !important;border-bottom:1px solid var(--g-pill-border) !important}
 html[data-path="/landing"] body.mob .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/landing"] body.mob .search-form:not(:focus-within) .search-input-container{border-radius:30px !important;border-bottom:1px solid transparent !important}
 html[data-path="/search"] body.mob .search-form:has(#searchBar:placeholder-shown) .search-input-container,html[data-path="/search"] body.mob .search-form:not(:focus-within) .search-input-container{border-radius:30px !important;border-bottom:1px solid transparent !important}
-/* Video, news and podcast results get the same cards, with tighter gaps */
 body.mob .videoResultItem,body.mob .newsResultItem,body.mob .podcast_result{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:0 !important}
 body.mob .videos._0_provider-content,body.mob .podcast_results{row-gap:16px !important;column-gap:16px !important}
 body.mob .newsResultItem{margin:0 0 16px !important}
-/* Remove the floating search button that pops up while scrolling */
 body.mob .quick-search-btn{display:none !important}
-/* Show suggestions on the mobile image search (desktop keeps them hidden) */
 html[data-path="/images"] body.mob .search-form .auto_suggestions:has(.auto_suggestions_in > *){display:block !important}
-/* Image results: two-up collage, like Google on mobile */
 html[data-path="/images"] body.mob .column._0_img-results,html[data-path="/images"] body.mob [class*="img-results"].column{display:grid !important;grid-template-columns:repeat(2,1fr) !important;gap:4px !important}
 html[data-path="/images"] body.mob ._0_img-results .item,html[data-path="/images"] body.mob [class*="img-results"] .item{width:100% !important;max-width:100% !important;margin:0 !important;padding:0 !important;overflow:hidden !important}
 html[data-path="/images"] body.mob ._0_img-results .item img{width:100% !important;height:100% !important;aspect-ratio:1 !important;object-fit:cover !important;display:block !important}
-/* Quick Answer: a card that starts collapsed to a snippet; "Show More" expands it */
 body.mob .qa-container-box._0_quick_answer_box{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:16px 0 16px !important}
 body.mob .qa-container-box:has(._0_qa_more_info_box[hidden]) .qa-content{max-height:150px !important;overflow:hidden !important;position:relative !important}
 body.mob .qa-container-box:has(._0_qa_more_info_box[hidden]) .qa-content::after{content:"" !important;position:absolute !important;left:0 !important;right:0 !important;bottom:0 !important;height:44px !important;background:linear-gradient(rgba(0,0,0,0),var(--g-card-bg)) !important;pointer-events:none !important}
 body.mob .qa-show-more-btn{background:var(--g-bg-hover) !important;border:none !important;border-radius:999px !important;padding:8px 22px !important;color:var(--g-text) !important;font-size:14px !important}
 body.mob .qa-show-more-btn::before{display:none !important}
 body.mob .qa-show-more-btn-box::after{display:none !important}
-/* Each search result - and its sitelinks - is its own rounded card */
 body.mob .sri-group{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:0 0 16px !important}
 body.mob .sri-group .search-result{background:transparent !important;border:none !important;border-radius:0 !important;padding:0 !important;margin:0 !important}
 body.mob ._0_provider-content > .search-result{background:var(--g-card-bg) !important;border:1px solid var(--g-border) !important;border-radius:12px !important;padding:14px 16px !important;margin:0 0 16px !important}
 body.mob .sri-group .sr-group{margin:10px -16px -14px !important;padding:0 16px 14px !important}
-
-/* Results-page tabs: no divider line, and less space before the first result */
 body.mob .serp-nav{border-bottom:none !important;margin-bottom:0 !important}
 body.mob main.a-w.content-area{margin-top:0 !important}
 body.mob .main-content._0_main-search-results{padding-top:16px !important}
